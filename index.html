@@ -10,147 +10,127 @@
     <style>
         body { font-family: 'Montserrat', sans-serif; background-color: #030303; }
         .font-luxury { font-family: 'Playfair Display', serif; }
-        
-        /* Premium Gold Gradients */
         .gold-text { background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); -webkit-background-clip: text; color: transparent; }
-        .gold-border { border: 1px solid rgba(212, 175, 55, 0.3); }
-        .gold-border-heavy { border: 1px solid rgba(212, 175, 55, 0.6); }
-        
-        /* Elegant Glassmorphism */
-        .luxury-card { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(15px); box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
-        
-        /* Luxurious Button */
-        .btn-luxury {
-            background: linear-gradient(135deg, #bf953f 0%, #aa771c 100%);
-            color: #000;
-            transition: all 0.5s ease;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-        }
-        .btn-luxury:hover {
-            background: linear-gradient(135deg, #fcf6ba 0%, #bf953f 100%);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
-            transform: translateY(-2px);
-        }
-
-        /* Ambient Glow */
-        .ambient-glow {
-            position: absolute; width: 300px; height: 300px;
-            background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0) 70%);
-            top: -100px; left: 50%; transform: translateX(-50%); z-index: -1;
-        }
+        .luxury-border { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .luxury-card { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(15px); }
+        .btn-luxury { background: linear-gradient(135deg, #bf953f 0%, #aa771c 100%); color: #000; transition: all 0.5s ease; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2); }
+        .btn-luxury:hover { background: linear-gradient(135deg, #fcf6ba 0%, #bf953f 100%); box-shadow: 0 0 25px rgba(212, 175, 55, 0.5); transform: translateY(-2px); }
+        .ambient-glow { position: absolute; width: 300px; height: 300px; background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, rgba(0,0,0,0) 70%); top: -100px; left: 50%; transform: translateX(-50%); z-index: -1; }
     </style>
 </head>
 <body class="text-slate-300 antialiased pb-20 selection:bg-yellow-600/30 relative z-0">
     <div class="ambient-glow"></div>
-    
-    <main class="max-w-md mx-auto px-6 pt-16 space-y-10">
+    <main class="max-w-md mx-auto px-6 pt-16 space-y-8">
         
-        <div class="text-center space-y-6 relative">
-            <div class="inline-block border border-[#d4af37]/40 text-[#d4af37] text-[9px] font-bold px-6 py-2 rounded-full uppercase tracking-[0.3em] bg-black/50 backdrop-blur-sm">
-                The Masterpiece Collection
+        <div class="text-center space-y-4">
+            <div class="inline-block border border-[#d4af37]/40 text-[#d4af37] text-[9px] font-bold px-6 py-2 rounded-full uppercase tracking-[0.3em] bg-black/50">
+                Paket Super Hemat
             </div>
-            <h1 class="font-luxury text-4xl md:text-5xl font-bold tracking-tight leading-tight text-white mt-4">
-                Ultimate <br><span class="gold-text italic">Audio Bundle</span>
+            <h1 class="font-luxury text-4xl font-bold tracking-tight text-white mt-4">
+                Ultimate <span class="gold-text italic">Audio Bundle</span>
             </h1>
-            <p class="text-slate-400 text-xs font-light leading-relaxed tracking-wide px-4">
-                Satu koleksi eksklusif untuk sinkronisasi total pikiran, jiwa, dan energi fisik Anda.
+            <p class="text-slate-400 text-xs font-light leading-relaxed tracking-wide">
+                Transformasi Bawah Sadar Secara Menyeluruh
             </p>
-            <div class="w-12 h-[1px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-6"></div>
+            <div class="w-12 h-[1px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4"></div>
         </div>
 
-        <div class="luxury-card gold-border rounded-2xl p-8 relative overflow-hidden">
-            <h3 class="font-luxury text-white text-lg mb-8 text-center tracking-wider">
-                <i class="fas fa-gem text-[#d4af37] text-sm mr-2 mb-1"></i> Isi Koleksi Premium
+        <div class="luxury-card luxury-border rounded-2xl p-6">
+            <h3 class="font-luxury text-white text-base mb-5 flex items-center gap-2">
+                <i class="fas fa-box-open text-[#d4af37]"></i> Isi Paket (3 Audio Premium):
+            </h3>
+            <div class="space-y-4">
+                <div class="flex items-start gap-4 p-3 bg-white/5 border border-white/10 rounded-xl">
+                    <i class="fas fa-brain text-purple-400 mt-1"></i>
+                    <div>
+                        <h4 class="text-xs text-white font-bold tracking-wide">Premium Theta Original</h4>
+                        <p class="text-[10px] text-slate-400 font-light mt-1">Harga Eceran Promo: Rp 300.000</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-3 bg-white/5 border border-white/10 rounded-xl">
+                    <i class="fas fa-water text-blue-400 mt-1"></i>
+                    <div>
+                        <h4 class="text-xs text-white font-bold tracking-wide">Healing Frequency 432 Hz</h4>
+                        <p class="text-[10px] text-slate-400 font-light mt-1">Harga Eceran Promo: Rp 300.000</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 p-3 bg-white/5 border border-white/10 rounded-xl">
+                    <i class="fas fa-spa text-green-400 mt-1"></i>
+                    <div>
+                        <h4 class="text-xs text-white font-bold tracking-wide">Miracle Frequency 528 Hz</h4>
+                        <p class="text-[10px] text-slate-400 font-light mt-1">Harga Eceran Promo: Rp 300.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-[#d4af37]/10 to-transparent border-l-2 border-[#d4af37] p-5 rounded-r-2xl">
+            <p class="text-[9px] text-slate-400 uppercase tracking-widest mb-1">Total Harga Normal (Tanpa Promo):</p>
+            <p class="text-xs text-slate-500 line-through mb-3">Rp 1.800.000</p>
+
+            <p class="text-[9px] text-slate-300 uppercase tracking-widest mb-1">Total Beli Eceran (Harga Promo):</p>
+            <p class="text-sm text-slate-400 line-through mb-4">Rp 900.000</p>
+            
+            <p class="text-[10px] text-[#d4af37] mb-1 font-bold uppercase tracking-wider">Harga Super Bundel (Lebih Hemat):</p>
+            <p class="font-luxury text-4xl font-bold text-white tracking-tighter">Rp 450.000</p>
+            <p class="text-[10px] text-[#fcf6ba] mt-2 font-light italic"><i class="fas fa-fire mr-1"></i> Anda menghemat Rp 450.000 dari harga promo eceran!</p>
+        </div>
+
+        <div class="luxury-card border border-slate-800 rounded-2xl p-6">
+            <h3 class="font-luxury text-[#d4af37] text-base mb-5 flex items-center gap-2">
+                <i class="fas fa-exclamation-triangle"></i> Info Penting
             </h3>
 
-            <div class="space-y-6">
-                <div class="flex items-center gap-5">
-                    <div class="w-12 h-12 rounded-full border border-[#d4af37]/30 flex items-center justify-center shrink-0">
-                        <i class="fas fa-brain gold-text text-lg"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-luxury text-white text-base tracking-wide">Theta Original</h4>
-                        <p class="text-[10px] text-slate-400 font-light mt-1">Akses gerbang pikiran bawah sadar.</p>
-                    </div>
-                </div>
-                <div class="w-full h-[1px] bg-slate-800/50"></div>
-                
-                <div class="flex items-center gap-5">
-                    <div class="w-12 h-12 rounded-full border border-[#d4af37]/30 flex items-center justify-center shrink-0">
-                        <i class="fas fa-water gold-text text-lg"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-luxury text-white text-base tracking-wide">Healing 432 Hz</h4>
-                        <p class="text-[10px] text-slate-400 font-light mt-1">Ketenangan emosional & anti-stres.</p>
-                    </div>
-                </div>
-                <div class="w-full h-[1px] bg-slate-800/50"></div>
-
-                <div class="flex items-center gap-5">
-                    <div class="w-12 h-12 rounded-full border border-[#d4af37]/30 flex items-center justify-center shrink-0">
-                        <i class="fas fa-spa gold-text text-lg"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-luxury text-white text-base tracking-wide">Miracle 528 Hz</h4>
-                        <p class="text-[10px] text-slate-400 font-light mt-1">Regenerasi sel & energi keberuntungan.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="luxury-card border border-slate-800 rounded-2xl p-7">
-            <h3 class="font-luxury text-[#d4af37] text-base mb-4 tracking-wider text-center">Panduan Terapeutik</h3>
-            
-            <div class="space-y-5">
-                <div>
-                    <h4 class="text-xs text-white font-bold tracking-widest uppercase mb-2"><i class="fas fa-wave-square text-[#d4af37] mr-2"></i> Pure Tone Characteristic</h4>
-                    <p class="text-[11px] text-slate-400 font-light leading-relaxed">
-                        Audio diformat sebagai <span class="text-white">Pure Sine Wave</span> tanpa musik pengiring. Didesain secara klinis untuk melakukan <i>bypass</i> kesadaran analitis secara langsung.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="text-xs text-white font-bold tracking-widest uppercase mb-2"><i class="fas fa-file-archive text-[#d4af37] mr-2"></i> Format & Akses</h4>
-                    <p class="text-[11px] text-slate-400 font-light leading-relaxed">
-                        Dikirim dalam format <span class="text-white">.ZIP (High-Fidelity WAV)</span>. Ekstrak file di perangkat Anda. Wajib menggunakan <span class="text-white">Earphone</span> selama sesi 15 menit.
-                    </p>
-                </div>
+            <div class="bg-black/40 rounded-xl p-4 border border-white/5 mb-4">
+                <h4 class="flex items-center gap-2 text-white font-bold mb-2 text-xs">
+                    <i class="fas fa-wave-square text-[#d4af37]"></i> Karakteristik Audio (Pure Tone):
+                </h4>
+                <p class="text-[10px] text-slate-300 font-light leading-relaxed mb-2">
+                    Audio ini adalah <span class="text-white font-medium">Pure Sine Wave (Frekuensi Murni)</span>. Terdengar seperti dengungan konstan tanpa alunan musik atau suara alam.
+                </p>
+                <p class="text-[10px] text-slate-400 font-light leading-relaxed italic">
+                    Kenapa dibuat tanpa musik? Karena musik dan melodi membuat otak analitis tetap aktif. Pure Tone didesain khusus secara klinis untuk melakukan bypass kesadaran tanpa distraksi.
+                </p>
             </div>
 
-            <div class="mt-6 border-l-2 border-[#8b0000] pl-4 py-1">
+            <div class="bg-black/40 rounded-xl p-4 border border-white/5 mb-4">
+                <h4 class="flex items-center gap-2 text-white font-bold mb-2 text-xs">
+                    <i class="fas fa-file-archive text-[#d4af37]"></i> Format Digital (.ZIP):
+                </h4>
+                <ul class="space-y-2 text-[10px] text-slate-300 font-light list-decimal list-outside ml-4">
+                    <li>Dapatkan 3 file <span class="text-white font-medium">WAV High-Fidelity</span> sekaligus.</li>
+                    <li>Ekstrak file ZIP di File Manager HP Anda.</li>
+                </ul>
+            </div>
+
+            <div class="bg-black/40 rounded-xl p-4 border border-white/5 mb-4">
+                <h4 class="flex items-center gap-2 text-white font-bold mb-2 text-xs">
+                    <i class="fas fa-headphones text-[#d4af37]"></i> Standar Penggunaan:
+                </h4>
+                <ul class="space-y-2 text-[10px] text-slate-300 font-light list-disc list-outside ml-4">
+                    <li>Wajib gunakan <span class="text-white font-medium">Earphone/Headphone</span>.</li>
+                    <li>Dengarkan dalam kondisi rileks selama 15 menit penuh.</li>
+                </ul>
+            </div>
+
+            <div class="border-l-2 border-[#8b0000] pl-3 py-1">
                 <p class="text-[#c75b5b] text-[10px] italic font-light">
-                    *Tindakan Pencegahan: Sangat dilarang mendengarkan frekuensi ini saat mengoperasikan kendaraan atau mesin berat.
+                    *Peringatan: Dilarang keras mendengarkan saat menyetir kendaraan atau mengoperasikan alat berat.
                 </p>
             </div>
         </div>
 
-        <div class="text-center pt-6">
-            <div class="mb-6">
-                <span class="text-[10px] text-slate-500 uppercase tracking-[0.2em] block mb-2">Nilai Investasi Asli</span>
-                <span class="text-sm text-slate-600 line-through font-light block mb-2">Rp 1.800.000</span>
-                <div class="font-luxury text-4xl text-white tracking-tighter mt-2 mb-1">Rp 450.000</div>
-                <span class="text-[10px] text-[#d4af37] tracking-widest uppercase font-bold">Exclusive Bundle Offer</span>
-            </div>
-
-            <a href="http://lynk.id/ikram-cyber/qq56o580nrmk/checkout" target="_blank" class="btn-luxury block w-full py-5 rounded-none font-bold text-xs uppercase tracking-[0.3em]">
-                Acquire The Masterpiece
+        <div class="text-center pt-4">
+            <a href="http://lynk.id/ikram-cyber/qq56o580nrmk/checkout" target="_blank" class="btn-luxury block w-full py-4 rounded-xl font-bold text-xs uppercase tracking-[0.2em]">
+                AMBIL PAKET LENGKAP SEKARANG
             </a>
-            
-            <p class="mt-5 text-[9px] text-slate-500 font-light uppercase tracking-widest">
-                *Belum termasuk biaya layanan platform
+            <p class="mt-4 text-[9px] text-slate-500 font-light uppercase tracking-widest">
+                *Harga belum termasuk biaya layanan (fee) platform.
             </p>
         </div>
 
-        <footer class="pt-16 pb-8 text-center">
-            <div class="w-8 h-[1px] bg-slate-800 mx-auto mb-6"></div>
-            <div class="flex justify-center gap-8 mb-6">
-                <a href="https://instagram.com/ikram_cyber" class="text-slate-500 hover:text-[#d4af37] transition duration-300"><i class="fab fa-instagram text-lg"></i></a>
-                <a href="https://tiktok.com/@ikram_cyber" class="text-slate-500 hover:text-[#d4af37] transition duration-300"><i class="fab fa-tiktok text-lg"></i></a>
-                <a href="https://wa.me/6282123436383" class="text-slate-500 hover:text-[#d4af37] transition duration-300"><i class="fab fa-whatsapp text-lg"></i></a>
-            </div>
-            <p class="text-[9px] text-slate-600 uppercase tracking-[0.4em] font-light">
-                &copy; 2026 Ikram Cyber System
-            </p>
+        <footer class="pt-10 pb-6 text-center border-t border-slate-900 mt-8">
+            <p class="text-[9px] text-slate-600 uppercase tracking-[0.4em] font-light">&copy; 2026 Ikram Cyber System</p>
         </footer>
     </main>
 </body>
